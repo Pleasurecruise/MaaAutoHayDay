@@ -1,5 +1,55 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
-    "MyTask3": {}
+    "商店": {
+                "recognition": "FeatureMatch",
+                "template": "商店.png",
+                "action": "Click",
+                "next": [
+                    "空闲"
+                ]
+            },
+    "空闲": {
+                "recognition": "OCR",
+                "template": "空闲",
+                "action": "Click",
+                "next": [
+                    "小麦"
+                ]
+            },
+    "小麦": {
+                "recognition": "FeatureMatch",
+                "template": "小麦.png",
+                "action": "Click",
+                "next": [
+                    "最大"
+                ]
+            },
+    "最大": {
+                "recognition": "FeatureMatch",
+                "template": "最大.png",
+                "action": "Click",
+                "next": [
+                    "广告"
+                ]
+            },
+    "广告": {
+                "recognition": "FeatureMatch",
+                "template": "广告.png",
+                "action": "Click",
+                "next": [
+                    "上架"
+                ]
+            },
+    "上架": {
+                "recognition": "OCR",
+                "template": "上架",
+                "action": "Click",
+                "next": [
+                    "关闭"
+                ]
+            },
+    "关闭": {
+                "recognition": "FeatureMatch",
+                "template": "关闭.png",
+                "action": "Click"
+            }
 }
